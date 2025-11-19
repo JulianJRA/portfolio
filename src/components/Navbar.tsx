@@ -9,8 +9,9 @@ const Navbar = () => {
   const links = [
     { label: t.navbar.home, href: "#home" },
     { label: t.navbar.about, href: "#about" },
+    { label: t.navbar.technologies, href: "#technologies" },
     { label: t.navbar.projects, href: "#projects" },
-    { label: t.navbar.contact, href: "#contact" }
+    { label: t.navbar.contact, href: "#contact" },
   ];
 
   return (
@@ -20,38 +21,43 @@ const Navbar = () => {
 
         {/* Desktop */}
         <ul className="hidden md:flex gap-8 font-medium">
-          {links.map(link => (
+          {links.map((link) => (
             <li key={link.label}>
-              <a href={link.href} className="hover:text-teal-400 transition">{link.label}</a>
+              <a href={link.href} className="hover:text-teal-400 transition">
+                {link.label}
+              </a>
             </li>
           ))}
         </ul>
 
         {/* Mobile */}
-        <button className="md:hidden" onClick={() => setOpen(prev => !prev)}>
+        <button className="md:hidden" onClick={() => setOpen((prev) => !prev)}>
           <Menu size={28} />
         </button>
 
         <button
-  onClick={() => setLang(lang === "en" ? "es" : "en")}
-  className="ml-4 w-20 h-9 rounded-full bg-gray-700 relative flex items-center transition"
->
-  <div
-    className={`absolute h-7 w-7 bg-teal-400 rounded-full transition-all ${
-      lang === "es" ? "left-1" : "left-11"
-    }`}
-  ></div>
-  <span className="absolute left-3 text-sm">ES</span>
-  <span className="absolute right-3 text-sm">EN</span>
-</button>
-
+          onClick={() => setLang(lang === "en" ? "es" : "en")}
+          className="ml-4 w-20 h-9 rounded-full bg-gray-700 relative flex items-center transition"
+        >
+          <div
+            className={`absolute h-7 w-7 bg-teal-400 rounded-full transition-all ${
+              lang === "es" ? "left-1" : "left-11"
+            }`}
+          ></div>
+          <span className="absolute left-3 text-sm">ES</span>
+          <span className="absolute right-3 text-sm">EN</span>
+        </button>
       </nav>
 
       {open && (
         <ul className="md:hidden bg-black/70 px-6 py-4 space-y-4">
-          {links.map(link => (
+          {links.map((link) => (
             <li key={link.label}>
-              <a href={link.href} className="block py-2 hover:text-teal-400" onClick={() => setOpen(false)}>
+              <a
+                href={link.href}
+                className="block py-2 hover:text-teal-400"
+                onClick={() => setOpen(false)}
+              >
                 {link.label}
               </a>
             </li>

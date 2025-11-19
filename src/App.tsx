@@ -1,8 +1,9 @@
 import Navbar from "./components/Navbar";
 import HomeSection from "./sections/HomeSection";
 import AboutSection from "./sections/AboutSection";
-import ProjectsSectionPlaceholder from "./sections/ProjectsSection";
+import ProjectsSection from "./sections/ProjectsSection";
 import ContactSection from "./sections/ContactSection";
+import TechnologiesSection from "./sections/TechnologiesSection";
 
 const App = () => {
   return (
@@ -11,7 +12,8 @@ const App = () => {
       <main className="px-6 md:px-12 lg:px-20">
         <HomeSection />
         <AboutSection />
-        <ProjectsSectionPlaceholder />
+        <TechnologiesSection />
+        <ProjectsSection />
         <ContactSection />
       </main>
     </div>

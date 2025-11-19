@@ -8,7 +8,10 @@ const HomeSection = () => {
   const title = lang === "en" ? "Software Engineer" : "Ingeniero de Software";
 
   return (
-    <section id="home" className="min-h-screen flex flex-col justify-center text-center px-4">
+    <section
+      id="home"
+      className="min-h-screen flex flex-col justify-center text-center px-4"
+    >
       {/* Nombre */}
       <motion.h1
         initial={{ opacity: 0, y: -20 }}
