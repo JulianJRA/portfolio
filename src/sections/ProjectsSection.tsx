@@ -6,7 +6,9 @@ const ProjectsSection = () => {
 
   return (
     <section id="projects" className="py-28">
-      <h2 className="text-3xl font-bold text-teal-400">{t.projects.title}</h2>
+      <h2 className="text-4xl font-extrabold text-teal-400 text-center mb-14 tracking-wide">
+        {t.projects.title}
+      </h2>
 
       <motion.div
         initial={{ opacity: 0 }}

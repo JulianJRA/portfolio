@@ -29,7 +29,9 @@ const ContactSection = () => {
 
   return (
     <section id="contact" className="py-28 flex flex-col items-center text-center">
-      <h2 className="text-3xl font-bold text-teal-400 mb-10">{t.contact.title}</h2>
+      <h2 className="text-4xl font-extrabold text-teal-400 text-center mb-14 tracking-wide">
+        {t.contact.title}
+      </h2>
 
       <div className="flex flex-col md:flex-row w-full max-w-5xl gap-10">
 
