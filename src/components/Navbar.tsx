@@ -17,7 +17,7 @@ const Navbar = () => {
   return (
     <header className="w-full fixed top-0 left-0 z-50 backdrop-blur bg-black/20">
       <nav className="flex justify-between items-center px-6 py-4">
-        <h1 className="text-xl font-bold">Mi Portfolio</h1>
+        <h1 className="text-xl font-bold">Portfolio</h1>
 
         {/* Desktop */}
         <ul className="hidden md:flex gap-8 font-medium">
