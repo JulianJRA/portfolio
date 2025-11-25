@@ -16,7 +16,7 @@ export default {
   },
   projects: {
     title: "Projects",
-    placeholder: "Here will be the projects currently in development."
+    placeholder: "Here will be the personal projects currently in development."
   },
   contact: {
     title: "Contact",
